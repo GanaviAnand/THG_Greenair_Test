@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="PersonalinfoTest">
+
+    <test thread-count="1" name="">
+        <classes>
+            <class name="persnalinfo.PersonalinfoTest">
+                <methods>
+                    <include name="Logintest"/>
+                </methods>
+				<methods>
+                    <include name="PersonalDatafeildtest"/>
+                </methods>
+				<methods>
+                    <include name="emptyemailTest"/>
+                </methods>
+				<methods>
+                    <include name="invalidIBANTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
