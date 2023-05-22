@@ -49,7 +49,7 @@ e.printStackTrace();
 
 //testing by providing empty input to email.
 @Test
-public emptyemailTest(){
+public void emptyemailTest(){
 	driver.findElement(By.xpath("//input[@id="mat-radio-2-input"])").click();
 
 //drop down of salutation
@@ -70,7 +70,7 @@ Assert.assertEquals(actualErrmsg,expectedErrmsg);
 
 //testing by providing invalid input to IBAN number.
 @Test
-public invalidIBANTest(){
+public void invalidIBANTest(){
 	driver.findElement(By.xpath("//input[@id="mat-radio-2-input"])").click();
 //drop down of salutation
 Select salutation=new Select(driver.findElement(By.id(“id="mat-select-value-1”)));
